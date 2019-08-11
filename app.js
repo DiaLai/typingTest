@@ -29,7 +29,7 @@ app.set("views", __dirname + "/views");
 app.use('/', require("./routes/api"));
 app.use('/', require('./routes/speed_test'));
 app.use('/', require('./routes/typing'));
-
+app.use('/', require("./routes/score"))
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   let err = new Error("File Not Found");
