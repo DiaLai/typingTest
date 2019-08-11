@@ -1,0 +1,494 @@
+/*  RESETS
+------------------------------------------------------------ */
+
+body {
+    background-color: #1D47A1;
+    font-family: 'Droid Serif', serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+table tr th {
+    width: 30%;
+    padding: 0px 10px 10px 10px;
+}
+
+table tr th:first-child {
+    width: 10%;
+}
+
+table tr td {
+    padding: 5px 10px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], button {
+    border: none;
+    outline: none;
+}
+
+/*remove that annoying x for inputs in edge*/
+input[type="text"]::-ms-clear, input[type="password"]::-ms-clear, input[type="email"]::-ms-clear {
+    display: none;
+}
+
+/*  GLOBALS
+------------------------------------------------------------ */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn {
+    width: 25%;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+div.container_intro {
+    width: 725px;
+    margin: 0 auto;
+    padding-top: 50px;
+    /*background-color: #30A9DE;*/
+    text-align: center;
+}
+
+div.container_option_1 {
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 15%;
+    /*margin: 0 auto;*/
+    /*padding-top: 50px;*/
+    height: 100px;
+    background-color: #30A9DE;
+    float: left;
+    text-align: center;
+    line-height:50px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+div.container_option_2 {
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 13%;
+    /*margin: 0 auto;*/
+    /*padding-top: 50px;*/
+    height: 100px;
+    background-color: #30A9DE;
+    float: left;
+    text-align: center;
+    line-height:50px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+div.container_option_3 {
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 13%;
+    /*margin: 0 auto;*/
+    /*padding-top: 50px;*/
+    height: 100px;
+    background-color: #30A9DE;
+    float: left;
+    text-align: center;
+    line-height:50px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+div.container {
+    width: 725px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+div.wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 30px;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: 'BioRhyme', serif;
+}
+
+.sub-title {
+    font-size: 22px;
+    font-family: 'BioRhyme', serif;
+}
+
+.sub-title i {
+    margin-left: 10px;
+    color: #EFDC05;
+}
+
+
+.user-note {
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.user-note i {
+    margin-right: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+.col {
+    box-sizing: border-box;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+/*  INDEX/FRONT PAGE
+------------------------------------------------------------ */
+#front-page a {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    background-color: #30A9DE;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+#front-page a i {
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+    transition: opacity ease-in-out .15s;
+}
+
+#front-page a:hover i {
+    opacity: 1;
+}
+
+/*  REGISTER/LOGIN
+------------------------------------------------------------ */
+.user-form {
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    color: #2A2C30;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#user-area button, #user-area a {
+    float: right;
+}
+
+#user-area .button-register {
+    background-color: #30A9DE;
+}
+
+#user-area .button-login {
+    background: #0DD442;
+}
+
+#user-area .button-cancel {
+    display: block;
+    float: left;
+    background: #E53A40;
+    text-align: center;
+}
+
+/*  GAME
+------------------------------------------------------------ */
+.main-menu {
+    position: absolute;
+    width: 100%;
+    min-width: 725px;
+    overflow: hidden;
+}
+
+.menu {
+    float: right;
+    width: 25%;
+    padding: 20px;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.menu i {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#game-area {
+    width: 650px;
+    margin: 0 auto;
+}
+
+#game-area .upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+#game-area .upper-section div {
+    min-width: 100px;
+}
+
+#game-area .upper-section .score-board {
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+#game-area .upper-section .score-board span:first-child {
+    color: #0DD442;
+}
+
+#game-area .upper-section .score-board span:last-child {
+    color: #E53A40;
+}
+
+#refresh {
+    float: right;
+    width: 50px;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #EFDC05;
+    font-size: 20px;
+}
+
+#typing-area {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 30px 50px;
+    font-size: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    /*transition: .5s all ease-in-out;*/
+}
+
+#time-counter {
+    font-size: 33px;
+}
+
+#game-area .words-area {
+    width: 150%;
+    font-size: 35px;
+}
+
+#game-area .word {
+    float: left;
+    padding: 5px 25px;
+}
+#game-area .word:nth-child(1) {
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+#game-area .score {
+    float: left;
+    margin-right: 10px;
+}
+
+#open-user-profile {
+    margin-left: 30px;
+}
+
+#close-leaderboard {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#submit-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+}
+
+/*  USER PROFILE
+------------------------------------------------------------ */
+div.container.user-and-stats, div.container.leaderboard {
+    width: 650px;
+    padding: 75px 50px 135px 50px;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+
+#user-and-stats, #leaderboard {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-left: -100%;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#user-and-stats {
+    background-color: #30A9DE;
+}
+
+#leaderboard {
+    background-color: #30A9DE;
+}
+
+.logout {
+    float: right;
+    display: block;
+    width: 110px;
+    padding: 10px 20px;
+    background-color: #1D47A1;
+    float: right;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.logout i {
+    float: right;
+    font-size: 20px;
+}
+
+.row.chart-row {
+    margin-top: 15px;
+}
+
+.profile-section {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.user-chart .sub-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.profile-section .user-information div {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.profile-section .user-information div i {
+    float: right;
+    color: #fff !important;
+}
+
+.profile-section .user-information div:last-child {
+    margin-bottom: 0px;
+}
+
+.profile-section .canvas-wrapper {
+    width: 70%;
+}
+
+.profile-section .canvas-wrapper.wpm-canvas {
+    float: left;
+}
+
+.profile-section .canvas-wrapper.words-canvas {
+    float: right;
+}
+
+.user-top-five .sub-title {
+    margin-bottom: 15px;
+}
+
+.leaderboard-section {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.leaderboard .sub-title {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.leaderboard-section .row {
+    margin-top: 50px;
+}
+
+.leaderboard-section .topScore {
+    margin-bottom: 19px;
+}
+
+.profile-section table tr:nth-child(even) {
+    background-color: #4290B3;
+}
+
+.leaderboard-section table tr:nth-child(even) {
+    background-color: #4290B3;
+}
+
+/*  ERROR
+------------------------------------------------------------ */
+#error {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#error i {
+    font-size: 80px;
+}
