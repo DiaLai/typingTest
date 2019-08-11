@@ -69,20 +69,3 @@ router.get('/speed_test', function(req, res) {
 
 module.exports = router;
 
-// module.exports = {
-//     // apiRoutes: router => {
-//         // GET /
-//         // router.get("/", (req, res) => {
-//         //     res.redirect("game");
-//         // });
-//
-//         // GET /game
-//         router.get("/speed_test", (req, res) =>
-//             res.render("game", { title: "GameZone" })
-//         );
-//
-//     //     // GET /score
-//     //     //TODO: refactor - minimize - moveout chunks
-
-//     // }
-// };
