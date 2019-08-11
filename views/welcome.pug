@@ -1,16 +1,15 @@
-doctype html
-html(lang="en")
-  head
-    title= pageTitle
-    script(type='text/javascript').
-      if (foo) bar(1 + 5)
-  body
-    h1 Pug - node template engine
-    #container.col
-      if youAreUsingPug
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Pug is a terse and simple templating language with a
-        strong focus on performance and powerful features.
+extends layout
+
+block content
+
+        .container_intro
+            h1 Typing Tool Box
+        .container_option_1
+            h2 Introduction
+        .container_option_2
+            h2
+                a(href='/typing_game')  Typing 101
+        .container_option_3
+            h2
+                a(href='/speed_test') Speed Test
+

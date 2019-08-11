@@ -72,6 +72,63 @@ input[type="text"]::-ms-clear, input[type="password"]::-ms-clear, input[type="em
     text-align: center;
 }
 
+div.container_intro {
+    width: 725px;
+    margin: 0 auto;
+    padding-top: 50px;
+    /*background-color: #30A9DE;*/
+    text-align: center;
+}
+
+div.container_option_1 {
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 15%;
+    /*margin: 0 auto;*/
+    /*padding-top: 50px;*/
+    height: 100px;
+    background-color: #30A9DE;
+    float: left;
+    text-align: center;
+    line-height:50px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+div.container_option_2 {
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 13%;
+    /*margin: 0 auto;*/
+    /*padding-top: 50px;*/
+    height: 100px;
+    background-color: #30A9DE;
+    float: left;
+    text-align: center;
+    line-height:50px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+div.container_option_3 {
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 13%;
+    /*margin: 0 auto;*/
+    /*padding-top: 50px;*/
+    height: 100px;
+    background-color: #30A9DE;
+    float: left;
+    text-align: center;
+    line-height:50px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 div.container {
     width: 725px;
     margin: 0 auto;
@@ -99,6 +156,7 @@ div.wrapper {
     margin-left: 10px;
     color: #EFDC05;
 }
+
 
 .user-note {
     font-style: italic;

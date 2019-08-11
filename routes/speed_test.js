@@ -6,9 +6,9 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/speed_test', function(req, res) {
-    // res.render("game", { title: "GameZone" })
+    res.render("game", { title: "GameZone" })
     // res.render("welcome", { title: "GameZone" })
-    res.send('hey!');
+    // res.send('hey!');
 });
 
 // router.get("/score", async (req, res) => {
