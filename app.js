@@ -6,6 +6,9 @@ const MongoStore = require("connect-mongo")(session);
 const favicon = require("serve-favicon");
 const app = express();
 
+
+// var gameRouter = require('./routes/speed_test');
+
 //heroku
 app.set("port", process.env.PORT || 3000);
 
@@ -23,8 +26,9 @@ app.set("view engine", "pug");
 app.set("views", __dirname + "/views");
 
 // include routes
-// app.use('/', routes);
-require("./routes/api").apiRoutes(app);
+app.use('/', require("./routes/api"));
+app.use('/', require('./routes/speed_test'));
+app.use('/', require('./routes/typing'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
